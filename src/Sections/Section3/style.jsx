@@ -64,6 +64,22 @@ display:flex;
 max-width:850px;
 flex-wrap:wrap;
 `
+export const CardSection = styled.div`
+&:hover,
+&>div:hover{
+
+    &>div{
+
+    margin-top: -10px;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    box-shadow: 0 0 20px 6px #0000007a;
+    span{
+        color: white;
+        fill:white;
+    }
+    }
+}
+`
 
 export const Card = styled(Default)`
 justify-content:center;
@@ -94,15 +110,6 @@ span:nth-child(3)
     text-align:center;
 }
 
-&:hover{
-    margin-top: -10px;
-    background: linear-gradient(to right, #ff9966, #ff5e62);
-    box-shadow: 0 0 20px 6px #0000007a;
-    span{
-        color: white;
-        fill:white;
-    }
-}
 `
 
 export const Division3 = styled(Division)`

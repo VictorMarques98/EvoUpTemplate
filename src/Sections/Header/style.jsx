@@ -81,3 +81,55 @@ ul{
   color:#e0c438;
 }
 `
+
+export const Zap = styled.div`
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  text-align: center;
+  cursor:pointer;
+  overflow:hidden;
+
+  .cta {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid #15ce2a;
+  background-color: #15ce2a;
+  color: #fff;
+  transition: width 0.7s;
+  cursor:pointer;
+  overflow:hidden;
+}
+.cta:hover {
+  width: 180px;
+  transition: width 0.7s;
+}
+
+.cta i {
+  opacity: 1;
+  transition: opacity 0.5s;
+  font-size:30px;
+}
+
+.cta:hover i {
+  opacity: 0;
+  transition: opacity 0.5s
+}
+
+.cta .button-text {
+  opacity: 0;
+  transition: opacity .5s;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  line-height:30px;
+  color:white;
+  text-decoration:none;
+ }
+
+.cta:hover .button-text {
+  opacity: 1;
+  transition: opacity 0.5s
+}
+`

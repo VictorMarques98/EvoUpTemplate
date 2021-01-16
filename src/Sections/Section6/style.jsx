@@ -10,7 +10,7 @@ import { Division } from '../Section7/style'
 import { Default } from '../../Pages/Home/style'
 
 export const Container6 = styled(Container)`
-background:none;
+background:white;
 padding-top:50px;
 `
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
-
+import LogoLight from '../../assets/images/logo_light.webp'
 
 //styled
 import { Global, Default, Loader } from './style'
@@ -34,21 +34,26 @@ const Home = () => {
         let top = (bodyRect.top) * (-1);
         let height = event.path[1].innerHeight
 
-        if(top >= height - 100)
-        {
+        if (top >= height - 100) {
             setHeader(true)
             setAnimation(true)
 
         }
-        else
-        {
+        else {
             setHeader(false)
         }
     }
 
     return (
         <>
-            <Suspense fallback={<Loader><div></div><div></div></Loader>}>
+            <Suspense fallback={ <Loader>
+                <div className="pai-loader">
+                    <div className="flex-center white-loading">
+                        <img src={LogoLight} alt="evoup-logo-loader" />
+                        <span className="animated-background"></span>
+                    </div>
+                </div>
+            </Loader>}>
                 <Global />
                 <Default >
                     <Header change={changeHeader}/>

@@ -1,44 +1,61 @@
 import styled,{createGlobalStyle} from 'styled-components'
 
 export const Loader = styled.div`
-width: 100vw;
-height: 100vh;
-position: absolute;
-left: 0;
-top: 0;
-display: flex;
-justify-content: center;
-align-items: center;
-background: #151515;
+height:100%;
+width:100%;
 
-div{
+
+.pai-loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+
+  img,span{
     position: absolute;
-    border: 4px solid #e3e621;
-    opacity: 1;
-    border-radius: 50%;
-    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-}
-
-div:nth-child(2) {
-    animation-delay: -0.5s;
-}
-
-@keyframes lds-ripple {
-  0% {
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    opacity: 1;
+    top: calc(50vh - 25px);
+    left: calc(50vw - 82px);
   }
-  100% {
-    top: calc(50% - 36px);
-    left: calc(50% - 36px);
-    width: 72px;
-    height: 72px;
-    opacity: 0;
+
+  span{
+    height:50px;
+    width:170px;
   }
 }
+
+.flex-center {
+  height: 100%;
+  background-color: #151515;
+}
+
+@keyframes dashAnimation {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes placeHolderShimmer{
+  0%{
+      background-position: -500px 0px;
+  }
+  100%{
+      background-position: 500px 0px;
+  }
+}
+
+.animated-background {
+  animation-name: placeHolderShimmer;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  background: #151515;
+  background: linear-gradient(-45deg, transparent 70%,#151515 15px, transparent );
+  background-size: 500px 500px ;
+}
+
 `
 
 export const Global = createGlobalStyle`

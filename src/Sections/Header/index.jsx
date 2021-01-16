@@ -1,7 +1,7 @@
 import React from 'react';
 
 //styled
-import { Container, Logo, Nav } from './style'
+import { Container, Logo, Nav, Zap } from './style'
 
 //Images
 import LogoLight from '../../assets/images/logo_light.webp'
@@ -38,6 +38,12 @@ const Header = ({ change }) => {
                     </li>
                 </ul>
             </Nav>
+            <Zap>
+                <button class="cta">
+                    <i class="fab fa-whatsapp"></i>
+                    <a href="https://api.whatsapp.com/send?phone=554891320921&text=Ol%C3%A1%2C%20gostaria%20de%20alavancar%20meu%20neg%C3%B3cio" class="button-text">Fale Conosco</a>
+                </button>
+            </Zap>
         </Container>
     )
 }

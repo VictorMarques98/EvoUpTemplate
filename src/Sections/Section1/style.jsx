@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Section1 from '../../assets/background/Section1.webp'
 
 export const Container = styled.section`
 display:flex;
@@ -10,7 +9,7 @@ height:100vh;
 width:100%;
 padding-top:80px;
 
-background-image:linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.43)),url(${Section1});
+background-image:none;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center 10;
@@ -30,7 +29,7 @@ background-attachment: fixed;
   }
 }
 
-&>div,
+& div:nth-child(2),
 &>button
 {
     opacity: 0;
@@ -118,4 +117,35 @@ a
     right: 0;
 }
 
+`
+
+export const Video = styled.div`
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+
+  .video-foreground,
+  iframe{
+    position: absolute;
+  top: -40px;
+  bottom:-70px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  }
+
+  .video-foreground{
+    padding-bottom: 56.25%;
+  }
+
+  .background{
+    width:100vw;
+    height:100vw;
+    position:absolute;
+    top:0;
+    left:0;
+    background: linear-gradient(rgb(0 0 0 / 55%),rgb(0 0 0 / 70%));
+  }
 `

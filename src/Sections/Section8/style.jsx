@@ -78,4 +78,9 @@ export const Button = styled.div`
 & a:nth-of-type(4){
   transition-delay: .4s;
 }
+
+i:hover{
+  color:#00ff1e;
+  animation:color .5s ease;
+}
 `

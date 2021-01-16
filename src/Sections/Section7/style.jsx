@@ -49,7 +49,7 @@ export const Team = styled.div`
 display:flex;
 justify-content:center;
 align-items:center;
-margin-top:40px;
+margin-top:80px;
 `
 
 export const Card = styled(Default)`
@@ -64,8 +64,8 @@ overflow:hidden;
 
 
 div:nth-child(1){
-height: 250px;
-width: 250px;
+height: 200px;
+width: 200px;
 border-radius: 50%;
 background-repeat: no-repeat;
 background-size: cover;

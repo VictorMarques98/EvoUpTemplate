@@ -10,13 +10,13 @@ const Section7 = () => {
 
     return (
         <Container7 name="time">
-            <Title>Equipe</Title>
+            <Title>Idealizadores</Title>
             <Division>
                 <div/>
                 <div/>
                 <div/>
             </Division>
-            <Subtitle>Somos em três pessoas na equipe, cada um contando com uma especialização diferente e nichada para o setor de marketing, afim de termos os melhores resultados possíveis em nossas ações.
+            <Subtitle>A partir da expertise de cada um de nós três a EvoUp surgiu, unindo  especializações diferentes e nichadas para o setor de marketing, afim de termos os melhores resultados possíveis em nossas ações.
             </Subtitle>
             <Team>
                 <Card>
@@ -50,7 +50,7 @@ const Section7 = () => {
                     </Image>
                     <Description>
                         <span>Mitchell Henrique</span><br />
-                        <span>Social Media</span>
+                        <span>Social Media e Copywriter</span>
                     </Description>
                 </Card>
                 <Card style={{marginRight:'0px'}}>

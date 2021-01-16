@@ -17,17 +17,17 @@ const Section6 = () => {
             <Portfolio>
                 <Line1>
                     <Card >
-                        <i className="fas fa-ice-cream"></i>
+                        <i className="fas fa-ice-cream" style={{color: "#05f3c7"}}></i>
                         <span>Cremolito</span>
                         <span>Empresa focada no ramo alimentício que usou a consultoria da EvoUp como escala para aumento de clientes no meio digital</span>
                     </Card>
                     <Card >
-                        <i className="fas fa-tshirt"></i>
+                        <i className="fas fa-tshirt" style={{color: "#24e024"}}></i>
                         <span>Fonte Fornecedores</span>
                         <span>Lançamento de infoproduto do qual contratou a EvoUp como acessoria, resultando em 4 digitos de faturamento em 7 dias</span>
                     </Card>
                     <Card style={{ marginRight: '0px' }} >
-                        <i className="fas fa-funnel-dollar"></i>
+                        <i className="fas fa-funnel-dollar" style={{color: "#e9da0a"}}></i>
                         <span>Método SDI</span>
                         <span>Lançamento de infoproduto que contou com os serviços da EvoUp, resultado em uma grande demanda de clientes e afiliados </span>
                     </Card>

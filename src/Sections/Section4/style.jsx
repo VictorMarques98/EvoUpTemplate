@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import { Container3,Left,Right,Card } from '../Section3/style'
-import { Division3 } from '../Section3/style'
+import { Division3,CardSection } from '../Section3/style'
 import Section4 from '../../assets/background/Section4.webp'
 
 
@@ -80,3 +80,6 @@ span:nth-child(3){
 }`
 
 export const Division4 = styled(Division3)``
+
+
+export const CardSection4 = styled(CardSection)``
