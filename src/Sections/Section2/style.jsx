@@ -7,11 +7,18 @@ import { Container } from '../Section1/style'
 export const Container2 = styled(Container)`
 background-image:url(${Section2});
 padding:0;
+height:max-content;
+min-height:100vh;
 
 
 &>span,li{
     opacity:0;
     animation: ${({animation})=> animation ? 'fadeInUp 1s ease-in-out 0s forwards':""};
+}
+
+@media(max-width:480px)
+{
+    padding:50px 20px;
 }
 `
 
@@ -23,6 +30,12 @@ font-size:20px;
 line-height:1.5;
 text-align:center;
 color:#313131;
+
+@media(max-width:480px)
+{
+    margin:60px 0;
+    max-width:100vw;
+}
 `
 
 export const Description = styled.ul`
@@ -30,6 +43,13 @@ display:flex;
 justify-content:center;
 width:100%;
 margin-top:80px;
+
+@media(max-width:480px)
+{
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+}
 `
 
 export const Desc = styled.li`
@@ -86,5 +106,9 @@ path{
     animation:${({animation,time}) => animation ? `animate ${time}s linear forwards`:""};
 }
 
+@media(max-width:480px)
+{
+    margin:0 0 35px 0;
+}
 
 `

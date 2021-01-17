@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container8, Title8,  Button } from './style'
+import { Container8, Title8,  Button, Button3 } from './style'
 
 const Section8 = () => {
     return (
@@ -13,6 +13,9 @@ const Section8 = () => {
                 <a href="https://www.instagram.com/evo.up/" ><i className="fab fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/company/75089915" ><i className="fab fa-linkedin-in"></i></a>
             </Button>
+            <Button3>
+                <a href="https://docs.google.com/uc?export=download&id=1737qVFNvDv1sQ4cirpf8cchfigs-rlYB">Baixe Nosso Kit Mídia</a>
+            </Button3>
         </Container8>
     )
 }

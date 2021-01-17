@@ -12,6 +12,10 @@ import { Default } from '../../Pages/Home/style'
 export const Container6 = styled(Container)`
 background:white;
 padding-top:50px;
+
+@media(max-width:480px){
+    padding: 50px 20px 0 20px;
+}
 `
 
 export const Title6 = styled(Title)`
@@ -32,7 +36,12 @@ margin-top:50px;
 export const Line1 = styled.ul`
 display:flex;
 justify-content:center;
-height:350px;`
+height:350px;
+@media(max-width:480px){
+    flex-direction: column;
+    height: max-content;
+}
+`
 
 export const Card = styled.li`
 display:flex;
@@ -40,6 +49,7 @@ flex-direction:column;
 justify-content:flex-end;
 flex:1;
 height:350px;
+min-height:350px;
 max-width:300px;
 min-width:300px;
 margin-right:20px;
@@ -114,5 +124,9 @@ background-image: linear-gradient(to bottom,rgba(0,0,0,0),#ff5433 100%), url(${i
         transform:translateY(0px);
         position:relative;
     }
+}
+
+@media(max-width:480px){
+    margin: 0 0 40px 0;
 }
 `

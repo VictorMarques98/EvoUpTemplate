@@ -5,6 +5,11 @@ import { Default } from '../../Pages/Home/style'
 export const Container7 = styled(Container)`
 background:#1b1b1b;
 padding-top:50px;
+
+@media(max-width:480px)
+{
+    padding: 50px 20px 0 20px;
+}
 `
 
 export const Title = styled.span`
@@ -50,12 +55,19 @@ display:flex;
 justify-content:center;
 align-items:center;
 margin-top:80px;
+
+@media(max-width:480px){
+    flex-direction:column;
+}
 `
 
 export const Card = styled(Default)`
 justify-content:center;
 margin-right:60px;
 
+@media(max-width:480px){
+    margin:0 0 40px 0;
+}
 `
 
 export const Image = styled(Default)`

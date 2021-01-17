@@ -14,7 +14,13 @@ const Section4 = lazy(() => import('../../Sections/Section4'))
 const Section5 = lazy(() => import('../../Sections/Section5'))
 const Section6 = lazy(() => import('../../Sections/Section6'))
 const Section7 = lazy(() => import('../../Sections/Section7'))
-const Section8 = lazy(() => import('../../Sections/Section8'))
+const Section8 = lazy(() => {
+    return Promise.all([
+      import("../../Sections/Section8"),
+      new Promise(resolve => setTimeout(resolve, 2500))
+    ])
+    .then(([moduleExports]) => moduleExports);
+  });
 
 const Home = () => {
 
@@ -46,7 +52,7 @@ const Home = () => {
 
     return (
         <>
-            <Suspense fallback={ <Loader>
+            <Suspense fallback={<Loader>
                 <div className="pai-loader">
                     <div className="flex-center white-loading">
                         <img src={LogoLight} alt="evoup-logo-loader" />
@@ -56,15 +62,15 @@ const Home = () => {
             </Loader>}>
                 <Global />
                 <Default >
-                    <Header change={changeHeader}/>
-                    <Section1/>
-                    <Section2 animation={animation}/>
-                    <Section3/>
-                    <Section4/>
-                    <Section5/>
-                    <Section6/>
-                    <Section7/>
-                    <Section8/>
+                    <Header change={changeHeader} />
+                    <Section1 />
+                    <Section2 animation={animation} />
+                    <Section3 />
+                    <Section4 />
+                    <Section5 />
+                    <Section6 />
+                    <Section7 />
+                    <Section8 />
                 </Default>
             </Suspense>
         </>

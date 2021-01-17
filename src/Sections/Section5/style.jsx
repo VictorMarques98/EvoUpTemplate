@@ -9,6 +9,12 @@ export const Container5 = styled(Container)`
 background-image:linear-gradient(180deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.8) 100%),url(${Section5});
 height:100vh;
 padding:0;
+
+@media(max-width:480px)
+{
+    height:max-content;
+    padding: 90px 20px 0 20px;
+}
 `
 
 export const Title = styled.span`
@@ -29,7 +35,11 @@ line-height: 1.5;
 export const CardSection = styled.div`
 display:flex;
 flex-wrap:wrap;
-margin-top:60px;`
+margin-top:60px;
+
+@media(max-width:480px){
+    flex-direction:column;
+}`
 
 export const Card = styled(Default)`
 justify-content: flex-start;
@@ -69,6 +79,9 @@ span:nth-child(3){
     line-height: 1.5;
     color: #b1b1b1;
 }
-
+@media(max-width:480px)
+{
+    margin:0 0 40px 0;
+}
 `
 export const Division5 = styled(Division)``

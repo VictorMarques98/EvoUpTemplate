@@ -1,31 +1,42 @@
 import React from 'react';
 
 //styled
-import { Container, Title, Button,Video } from './style'
+import { Container, Title, Button, Video} from './style'
 
 //Scroll    
 import { Link } from 'react-scroll'
 
 const Section1 = () => {
 
+    const isMobile = () => {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            return ''
+        }
 
-    return (
-        <Container name="section1">
-             <Video>
+        else {
+            return <Video>
                 <div className="video-foreground">
                     <iframe src="https://www.youtube.com/embed/iB02s-PCo68?autoplay=1&mute=1&enablejsapi=1&controls=0&loop=1&playlist=iB02s-PCo68&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
                 </div>
-                <div className="background"/>
+                <div className="background" />
             </Video>
+
+        }
+
+    }
+
+    return (
+        <Container name="section1">
+            {isMobile()}
             <Title>
                 <h1>
-                    <p>Somos a conexão entre você e o seu público ideal.</p>
+                    <p>Somos a conexão entre <span style={{ color: 'gold' }}>você</span> e o seu público ideal.</p>
                 </h1>
             </Title>
             <Button>
                 <Link to="section2" spy={true} smooth={true} duration={800}>Entenda</Link>
             </Button>
-        </Container>
+        </Container >
     )
 }
 

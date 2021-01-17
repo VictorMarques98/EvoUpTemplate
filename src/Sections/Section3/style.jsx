@@ -10,13 +10,23 @@ import Section3 from '../../assets/background/Section3.webp'
 export const Container3 = styled(Container)`
 flex-direction:row;
 background-image:linear-gradient(180deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.8) 100%),url(${Section3});
-padding-top:50px;
+padding-top:30px;
 span{
     font-family:"Open Sans";
 }
 &>div{
     opacity:1;
     animation:none;
+}
+
+@media(max-width:480px){
+    flex-direction: column;
+    height: max-content;
+
+    &>div{
+    flex-direction: column;
+    margin-top: 35px;
+    }
 }
 `
 
@@ -65,6 +75,9 @@ max-width:850px;
 flex-wrap:wrap;
 `
 export const CardSection = styled.div`
+
+@media(min-width:480px){
+
 &:hover,
 &>div:hover{
 
@@ -79,6 +92,9 @@ export const CardSection = styled.div`
     }
     }
 }
+}
+
+
 `
 
 export const Card = styled(Default)`

@@ -53,6 +53,12 @@ margin-left:10px;
         transform: rotate(0deg);
     }
 }
+
+@media(max-width:480px)
+{
+    order:0;
+    margin-left:0;
+}
 `
 
 export const Right2 = styled(Right)`
