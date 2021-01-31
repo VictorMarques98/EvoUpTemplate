@@ -13,7 +13,7 @@ padding:0;
 @media(max-width:480px)
 {
     height:max-content;
-    padding: 90px 20px 0 20px;
+    padding: 60px 20px;
 }
 `
 

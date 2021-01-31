@@ -10,7 +10,7 @@ import Section3 from '../../assets/background/Section3.webp'
 export const Container3 = styled(Container)`
 flex-direction:row;
 background-image:linear-gradient(180deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.8) 100%),url(${Section3});
-padding-top:30px;
+padding:60px 20px;
 span{
     font-family:"Open Sans";
 }
@@ -44,8 +44,11 @@ svg{
     animation: rocket-move 2s ease-in-out infinite alternate;
 }
 
+@media(min-width:480px)
+{
 @keyframes rocket-move{
   to{ transform: translateY(30px); }
+}
 }
 
 
@@ -108,7 +111,8 @@ background:#d8d8d8;
 transition: all 0.4s ease;
 
 svg{
-    height:50px;
+    height: 50px;
+    width: 100%!important;
 }
 
 span:nth-child(2)

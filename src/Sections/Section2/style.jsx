@@ -10,10 +10,12 @@ padding:0;
 height:max-content;
 min-height:100vh;
 
-
+@media(min-width:480px)
+{
 &>span,li{
     opacity:0;
     animation: ${({animation})=> animation ? 'fadeInUp 1s ease-in-out 0s forwards':""};
+}
 }
 
 @media(max-width:480px)
@@ -34,7 +36,7 @@ color:#313131;
 @media(max-width:480px)
 {
     margin:60px 0;
-    max-width:100vw;
+    max-width:320px;
 }
 `
 
@@ -102,13 +104,23 @@ svg{
     
 }
 
+@media(max-width:480px)
+{
+
 path{
     animation:${({animation,time}) => animation ? `animate ${time}s linear forwards`:""};
+}
 }
 
 @media(max-width:480px)
 {
     margin:0 0 35px 0;
+    max-width:250px;
+    border: solid 1px #80808073;
+
+    svg{
+        height:80px;
+    }
 }
 
 `

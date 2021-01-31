@@ -7,7 +7,7 @@ import { Container2, Text, Description, Desc } from './style'
 const Section2 = ({ animation }) => {
 
     return (
-        <Container2 animation={animation} name="section2">
+        <Container2 animation={animation} name="sobre">
             <Text>Com análise de dados, estratégias comportamentais e de percepções, levamos o seu cliente do ponto A ao ponto B.
             </Text>
             <Description>

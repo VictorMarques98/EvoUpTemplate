@@ -15,9 +15,9 @@ height:50px;
 width:100%;
 flex-direction:row;
 justify-content:space-between;
-background:#d8d8d8;
-box-shadow: 0 0 9px #0000003d;
-overflow:initial;
+background: #fffffff5;
+box-shadow: 0 0 9px #00000029;
+overflow: initial;
 `:
 css`
 position:absolute;
@@ -26,6 +26,7 @@ overflow:hidden;
 `
 }
 
+@media(min-width:480px){
 @keyframes fadeInUp {
   from { 
     opacity: 0;
@@ -44,6 +45,7 @@ overflow:hidden;
     opacity: 0;
     animation: fadeInUp 1s ease-in-out 0s forwards;
 }
+}
 
 @media(max-width:480px)
 {
@@ -51,6 +53,7 @@ overflow:hidden;
   width: 100vw;
   padding:  ${({change}) => change ? '10px 20px':'40px'};
   justify-content:space-between;
+
 }
 `
 
@@ -92,7 +95,8 @@ ul{
         cursor:pointer;
 
         :hover{
-            color:${({change}) => change ? '#e0c438':'grey'}
+            color:${({change}) => change ? '#e0c438':'grey'};
+            cursor:pointer!important;
         }
     }
 }

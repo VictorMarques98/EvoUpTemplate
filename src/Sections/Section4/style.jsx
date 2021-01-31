@@ -8,11 +8,21 @@ import Section4 from '../../assets/background/Section4.webp'
 export const Container2 = styled(Container3)`
 background-image:linear-gradient(180deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.8) 100%),url(${Section4});
 padding:0;
+
+@media(max-width:480px)
+{
+   padding: 60px 20px;
+
+}
 `
 
 export const Left2 = styled(Left)`
 order:1;
 margin-left:10px;
+
+@media(min-width:480px)
+{
+
 
 #gear{
     animation-name: ckw;
@@ -53,11 +63,17 @@ margin-left:10px;
         transform: rotate(0deg);
     }
 }
+}
+
 
 @media(max-width:480px)
 {
     order:0;
     margin-left:0;
+
+    #gear,#gear2{
+        display:none;
+    }
 }
 `
 

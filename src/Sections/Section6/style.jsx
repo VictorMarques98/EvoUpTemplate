@@ -14,7 +14,7 @@ background:white;
 padding-top:50px;
 
 @media(max-width:480px){
-    padding: 50px 20px 0 20px;
+    padding: 60px 20px;
 }
 `
 
@@ -128,5 +128,17 @@ background-image: linear-gradient(to bottom,rgba(0,0,0,0),#ff5433 100%), url(${i
 
 @media(max-width:480px){
     margin: 0 0 40px 0;
+    max-width:260px;
+    span:nth-child(2), i
+    {
+        transform:translateY(-10px);
+        letter-spacing:-0.5px;
+    }
+
+    span:nth-child(3)
+    {
+        transform:translateY(0px);
+        position:relative;
+    }
 }
 `

@@ -31,19 +31,22 @@ const Header = ({ change }) => {
                     </div>
                     <ul>
                         <li>
-                            <Link to="section1" spy={true} smooth={true} duration={800}>Home</Link>
+                            <Link to="inicio" spy={true} smooth={true} duration={800}>Início</Link>
                         </li>
                         <li>
-                            <Link to="section2" spy={true} smooth={true} duration={800}>Sobre</Link>
+                            <Link to="sobre" spy={true} smooth={true} duration={800}>Sobre</Link>
                         </li>
                         <li>
-                            <Link to="services" spy={true} smooth={true} duration={800}>Serviços</Link>
+                            <Link to="servicos" spy={true} smooth={true} duration={800}>Serviços</Link>
+                        </li>
+                        <li>
+                            <Link to="lancamento" spy={true} smooth={true} duration={800}>Lançamento</Link>
                         </li>
                         <li>
                             <Link to="portfolio" spy={true} smooth={true} duration={800}>Portfólio</Link>
                         </li>
                         <li>
-                            <Link to="time" spy={true} smooth={true} duration={800}>Equipe</Link>
+                            <Link to="equipe" spy={true} smooth={true} duration={800}>Equipe</Link>
                         </li>
                         <li>
                             <Link to="contato" spy={true} smooth={true} duration={800}>Contato</Link>
@@ -56,21 +59,24 @@ const Header = ({ change }) => {
         else {
             return <React.Fragment>
                 <Nav change={change}>
-                    <ul>
+                <ul>
                         <li>
-                            <Link to="section1" spy={true} smooth={true} duration={800}>Home</Link>
+                            <Link to="inicio" spy={true} smooth={true} duration={800}>Início</Link>
                         </li>
                         <li>
-                            <Link to="section2" spy={true} smooth={true} duration={800}>Sobre</Link>
+                            <Link to="sobre" spy={true} smooth={true} duration={800}>Sobre</Link>
                         </li>
                         <li>
-                            <Link to="services" spy={true} smooth={true} duration={800}>Serviços</Link>
+                            <Link to="servicos" spy={true} smooth={true} duration={800}>Serviços</Link>
+                        </li>
+                        <li>
+                            <Link to="lancamento" spy={true} smooth={true} duration={800}>Lançamento</Link>
                         </li>
                         <li>
                             <Link to="portfolio" spy={true} smooth={true} duration={800}>Portfólio</Link>
                         </li>
                         <li>
-                            <Link to="time" spy={true} smooth={true} duration={800}>Equipe</Link>
+                            <Link to="equipe" spy={true} smooth={true} duration={800}>Equipe</Link>
                         </li>
                         <li>
                             <Link to="contato" spy={true} smooth={true} duration={800}>Contato</Link>

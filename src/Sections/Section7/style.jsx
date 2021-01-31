@@ -8,7 +8,7 @@ padding-top:50px;
 
 @media(max-width:480px)
 {
-    padding: 50px 20px 0 20px;
+    padding: 60px 20px;
 }
 `
 
@@ -25,6 +25,11 @@ max-width: 540px;
 text-align: center;
 font-size: 16px;
 line-height: 1.5;
+
+@media(max-width:480px)
+{
+    max-width:260px;
+}
 `
 
 export const Division = styled.div`

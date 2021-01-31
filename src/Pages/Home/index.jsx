@@ -15,12 +15,18 @@ const Section5 = lazy(() => import('../../Sections/Section5'))
 const Section6 = lazy(() => import('../../Sections/Section6'))
 const Section7 = lazy(() => import('../../Sections/Section7'))
 const Section8 = lazy(() => {
-    return Promise.all([
-      import("../../Sections/Section8"),
-      new Promise(resolve => setTimeout(resolve, 2500))
-    ])
-    .then(([moduleExports]) => moduleExports);
-  });
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        return import("../../Sections/Section8")
+    }
+    else {
+
+        return Promise.all([
+            import("../../Sections/Section8"),
+            new Promise(resolve => setTimeout(resolve, 2500))
+        ])
+            .then(([moduleExports]) => moduleExports);
+    }
+});
 
 const Home = () => {
 

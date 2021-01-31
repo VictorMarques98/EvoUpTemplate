@@ -17,6 +17,7 @@ background-position: center 10;
 background-attachment: fixed;
 overflow:hidden;
 
+@media(min-width:480px){
 @keyframes fadeInUp {
   from { 
     opacity: 0;
@@ -37,6 +38,8 @@ overflow:hidden;
     opacity: 0;
     animation: fadeInUp 1s ease-in-out 0s forwards;
 }
+}
+
 
 @media(max-width:480px)
 {
@@ -45,6 +48,7 @@ overflow:hidden;
   background-position: center center;
   height:max-content;
   min-height:100vh;
+  background-attachment: scroll;
 }
 `
 
@@ -70,7 +74,7 @@ h1{
 
         &:nth-child(3){
             font-size:30px;
-            font-weight:300;
+            font-family:'Open Sans Light';
         }
 
         @media(max-width:480px)

@@ -9,7 +9,7 @@ import Member3 from '../../assets/fundadores/Victor.webp'
 const Section7 = () => {
 
     return (
-        <Container7 name="time">
+        <Container7 name="equipe">
             <Title>Idealizadores</Title>
             <Division>
                 <div/>
@@ -22,14 +22,6 @@ const Section7 = () => {
                 <Card>
                     <Image >
                         <div style={{backgroundImage:`url(${Member1})`}}/>
-                        {/* <div>
-                            <a href="www.gooogle.com">
-                                <i className="fab fa-instagram"/>
-                            </a>
-                            <a href="www.gooogle.com">
-                                <i className="fab fa-linkedin" style={{marginRight:'0px'}} />
-                            </a>
-                        </div> */}
                     </Image>
                     <Description>
                         <span>Caio Portela</span><br />
@@ -39,14 +31,6 @@ const Section7 = () => {
                 <Card>
                     <Image >
                         <div style={{backgroundImage:`url(${Member2})`}}/>
-                        {/* <div>
-                            <a href="www.gooogle.com">
-                                <i className="fab fa-instagram"/>
-                            </a>
-                            <a href="www.gooogle.com">
-                                <i className="fab fa-linkedin" style={{marginRight:'0px'}} />
-                            </a>
-                        </div> */}
                     </Image>
                     <Description>
                         <span>Mitchell Henrique</span><br />
@@ -56,14 +40,6 @@ const Section7 = () => {
                 <Card style={{marginRight:'0px'}}>
                     <Image >
                         <div style={{backgroundImage:`url(${Member3})`}}/>
-                        {/* <div>
-                            <a href="www.gooogle.com">
-                                <i className="fab fa-instagram" />
-                            </a>
-                            <a href="www.gooogle.com">
-                                <i className="fab fa-linkedin" style={{marginRight:'0px'}} />
-                            </a>
-                        </div> */}
                     </Image>
                     <Description>
                         <span>Victor Marques</span><br />

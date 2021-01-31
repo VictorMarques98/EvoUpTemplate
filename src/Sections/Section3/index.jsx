@@ -6,7 +6,7 @@ import { Container3, Left, Right, Card, Division3,CardSection } from './style'
 const Section3 = () => {
 
     return (
-        <Container3 name="services">
+        <Container3 name="servicos">
             <Left>
                 <span>Lançamento</span>
                 <Division3>

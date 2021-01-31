@@ -16,7 +16,7 @@ const Section1 = () => {
         else {
             return <Video>
                 <div className="video-foreground">
-                    <iframe src="https://www.youtube.com/embed/iB02s-PCo68?autoplay=1&mute=1&enablejsapi=1&controls=0&loop=1&playlist=iB02s-PCo68&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                    <iframe title="evo-intro" src="https://www.youtube.com/embed/iB02s-PCo68?autoplay=1&mute=1&enablejsapi=1&controls=0&loop=1&playlist=iB02s-PCo68&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
                 </div>
                 <div className="background" />
             </Video>
@@ -26,7 +26,7 @@ const Section1 = () => {
     }
 
     return (
-        <Container name="section1">
+        <Container name="inicio">
             {isMobile()}
             <Title>
                 <h1>
@@ -34,7 +34,7 @@ const Section1 = () => {
                 </h1>
             </Title>
             <Button>
-                <Link to="section2" spy={true} smooth={true} duration={800}>Entenda</Link>
+                <Link to="sobre" spy={true} smooth={true} duration={800}>Entenda</Link>
             </Button>
         </Container >
     )
