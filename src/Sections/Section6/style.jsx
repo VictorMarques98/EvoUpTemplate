@@ -12,6 +12,10 @@ import { Default } from '../../Pages/Home/style'
 export const Container6 = styled(Container)`
 background:white;
 padding-top:50px;
+
+@media(max-width:480px){
+    padding: 60px 20px;
+}
 `
 
 export const Title6 = styled(Title)`
@@ -32,7 +36,12 @@ margin-top:50px;
 export const Line1 = styled.ul`
 display:flex;
 justify-content:center;
-height:350px;`
+height:350px;
+@media(max-width:480px){
+    flex-direction: column;
+    height: max-content;
+}
+`
 
 export const Card = styled.li`
 display:flex;
@@ -40,6 +49,7 @@ flex-direction:column;
 justify-content:flex-end;
 flex:1;
 height:350px;
+min-height:350px;
 max-width:300px;
 min-width:300px;
 margin-right:20px;
@@ -89,6 +99,8 @@ background-image: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(0,0,0,.9) 100%
         font-size:15px;
     }
 
+@media(min-width:480px){
+
     &:hover{
         background-image: linear-gradient(to bottom,rgba(0,0,0,0),#ff5433 100%), url(${image1});
         margin-top:-20px;
@@ -103,6 +115,23 @@ background-image: linear-gradient(to bottom,rgba(0,0,0,0),#ff5433 100%), url(${i
 background-image: linear-gradient(to bottom,rgba(0,0,0,0),#ff5433 100%), url(${image3});
 }
 
+    span:nth-child(2), i
+    {
+        transform:translateY(-10px);
+        letter-spacing:-0.5px;
+    }
+
+    span:nth-child(3)
+    {
+        transform:translateY(0px);
+        position:relative;
+    }
+}
+}
+
+@media(max-width:480px){
+    margin: 0 0 40px 0;
+    max-width:260px;
     span:nth-child(2), i
     {
         transform:translateY(-10px);

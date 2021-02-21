@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 //styled
-import { Container } from '../Section1/style'
+import { Container,Button } from '../Section1/style'
 import { Default } from '../../Pages/Home/style'
 import { Division } from '../Section7/style'
 import Section3 from '../../assets/background/Section3.webp'
@@ -10,13 +10,23 @@ import Section3 from '../../assets/background/Section3.webp'
 export const Container3 = styled(Container)`
 flex-direction:row;
 background-image:linear-gradient(180deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.8) 100%),url(${Section3});
-padding-top:50px;
+padding:60px 20px;
 span{
     font-family:"Open Sans";
 }
 &>div{
     opacity:1;
     animation:none;
+}
+
+@media(max-width:480px){
+    flex-direction: column;
+    height: max-content;
+
+    &>div{
+    flex-direction: column;
+    margin-top: 35px;
+    }
 }
 `
 
@@ -28,15 +38,11 @@ height:100%;
 color: white;
 
 svg{
-    height:200px;
+    height:180px;
     margin-top:46px;
     fill: #dcdcdc;
-    animation: rocket-move 2s ease-in-out infinite alternate;
 }
 
-@keyframes rocket-move{
-  to{ transform: translateY(30px); }
-}
 
 
 span:nth-child(1)
@@ -65,6 +71,9 @@ max-width:850px;
 flex-wrap:wrap;
 `
 export const CardSection = styled.div`
+
+@media(min-width:480px){
+
 &:hover,
 &>div:hover{
 
@@ -79,6 +88,9 @@ export const CardSection = styled.div`
     }
     }
 }
+}
+
+
 `
 
 export const Card = styled(Default)`
@@ -92,7 +104,8 @@ background:#d8d8d8;
 transition: all 0.4s ease;
 
 svg{
-    height:50px;
+    height: 50px;
+    width: 100%!important;
 }
 
 span:nth-child(2)
@@ -113,4 +126,25 @@ span:nth-child(3)
 `
 
 export const Division3 = styled(Division)`
+`
+
+export const Button3 = styled(Button)`
+    width: 200px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px;
+    height: max-content;
+    color: white;
+    background: #1d8e15;
+    letter-spacing: .3px;
+    cursor:pointer!important;
+
+    &:hover{
+        background:#00aeff;
+    }
+
+    @media(max-width:480px)
+    {
+        width:100%;
+    }
 `

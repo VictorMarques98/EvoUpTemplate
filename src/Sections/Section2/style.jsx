@@ -7,29 +7,51 @@ import { Container } from '../Section1/style'
 export const Container2 = styled(Container)`
 background-image:url(${Section2});
 padding:0;
+height:max-content;
+min-height:100vh;
 
-
+@media(min-width:480px)
+{
 &>span,li{
     opacity:0;
     animation: ${({animation})=> animation ? 'fadeInUp 1s ease-in-out 0s forwards':""};
+}
+}
+
+@media(max-width:480px)
+{
+    padding:50px 20px;
 }
 `
 
 export const Text = styled.span`
 font-weight: 300;
 width:100%;
-max-width:780px;
+max-width:700px;
 font-size:20px;
 line-height:1.5;
 text-align:center;
 color:#313131;
+
+@media(max-width:480px)
+{
+    margin:60px 0;
+    max-width:320px;
+}
 `
 
 export const Description = styled.ul`
 display:flex;
 justify-content:center;
 width:100%;
-margin-top:80px;
+margin-top:60px;
+
+@media(max-width:480px)
+{
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+}
 `
 
 export const Desc = styled.li`
@@ -43,6 +65,7 @@ padding: 20px;
 border-radius: 20px;
 background: white;
 box-shadow: 0 30px 17px -15px #0000006e;
+border: solid 1px #e0dede;
 
 &:nth-child(1){
     animation-delay: .5s;
@@ -78,13 +101,44 @@ span{
 }
 
 svg{
-    height:100px;
-    
+    height:65px;
+    width:100%;
 }
+
+a{
+    text-decoration: none;
+    margin-top: 20px;
+    background: #1bd01b;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition:all .7s;
+    text-align:center;
+    width:100%;
+
+    &:hover{
+        background:#0c690c;
+    }
+}
+
+@media(max-width:480px)
+{
 
 path{
     animation:${({animation,time}) => animation ? `animate ${time}s linear forwards`:""};
 }
+}
 
+@media(max-width:480px)
+{
+    margin:0 0 35px 0;
+    max-width:280px;
+    border: solid 1px #80808073;
+
+    svg{
+        height:80px;
+    }
+}
 
 `

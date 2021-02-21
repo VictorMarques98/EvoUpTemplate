@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Mobile from '../../assets/images/bk-mobile.webp'
 
 export const Container = styled.section`
 display:flex;
@@ -14,7 +15,9 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center 10;
 background-attachment: fixed;
+overflow:hidden;
 
+@media(min-width:480px){
 @keyframes fadeInUp {
   from { 
     opacity: 0;
@@ -29,23 +32,35 @@ background-attachment: fixed;
   }
 }
 
-& div:nth-child(2),
+&>div,
 &>button
 {
     opacity: 0;
     animation: fadeInUp 1s ease-in-out 0s forwards;
 }
+}
+
+
+@media(max-width:480px)
+{
+  background-image: linear-gradient(180deg,rgb(0 0 0 / 64%) 0%,rgb(0 0 0 / 69%) 50%), url(${Mobile});
+  padding-top:50px;
+  background-position: center center;
+  height:max-content;
+  min-height:100vh;
+  background-attachment: scroll;
+}
 `
 
 export const Title = styled.div`
 width:880px;
-animation-delay: 1s;
+animation-delay: 2s;
 
 h1{
     height:max-content;
     text-align:center;
 
-    p{
+    p,span{
         font-weight: 700;
         font-size: 42px;
         letter-spacing: 1px;
@@ -59,9 +74,21 @@ h1{
 
         &:nth-child(3){
             font-size:30px;
-            font-weight:300;
+            font-family:'Open Sans Light';
+        }
+
+        @media(max-width:480px)
+        {
+          font-size: 35px;
+          line-height: 45px;
         }
     }
+}
+
+@media(max-width:480px)
+{
+  max-width:100vw;
+  padding: 0 20px;
 }
 `
 
@@ -70,7 +97,7 @@ width:150px;
 height:44px;
 margin-top:25px;
 
-background-color:#e0c438;
+background-color:${(props) => props.color ? props.color : ''};
 border:none;
 border-radius:3px;
 outline:none;
@@ -106,7 +133,7 @@ a
 {
     background-color:white;
     a{
-        color:#e0c438;
+        color:  ${(props) => props.color ? props.color : ''};
         padding-right: 25px;
     }
 }
@@ -117,9 +144,13 @@ a
     right: 0;
 }
 
+@media(max-width:480px)
+{
+  margin-top:45px;
+}
 `
 
-export const Video = styled.div`
+export const Video = styled.aside`
   background: #000;
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
@@ -127,7 +158,7 @@ export const Video = styled.div`
 
   .video-foreground,
   iframe{
-    position: absolute;
+  position: absolute;
   top: -40px;
   bottom:-70px;
   left: 0;
@@ -142,7 +173,7 @@ export const Video = styled.div`
 
   .background{
     width:100vw;
-    height:100vw;
+    height:100vh;
     position:absolute;
     top:0;
     left:0;

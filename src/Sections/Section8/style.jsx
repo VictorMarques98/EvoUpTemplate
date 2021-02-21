@@ -5,10 +5,13 @@ import { Title } from '../Section7/style'
 
 import Section6 from '../../assets/background/Section6.webp'
 
+import { Button as Button2} from '../Section1/style'
+
+
 
 export const Container8 = styled(Container)`
 background-image:linear-gradient(rgba(0, 0, 0, 0.364), rgba(0, 0, 0, 0.43)),url(${Section6});
-padding:0;
+padding:0 20px;
 `
 
 export const Title8 = styled(Title)``
@@ -82,5 +85,26 @@ export const Button = styled.div`
 i:hover{
   color:#00ff1e;
   animation:color .5s ease;
+}
+`
+
+export const Button3 = styled(Button2)`
+background:#a2a2a2;
+width: 280px;
+height: 60px;
+border-radius: 40px;
+
+&:hover 
+{
+    background-color:white;
+    a{
+        color:#0a7416;
+        padding-right: 25px;
+    }
+}
+
+@media(max-width:480px)
+{
+  margin-top:20px;
 }
 `

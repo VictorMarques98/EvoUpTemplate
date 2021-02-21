@@ -1,12 +1,12 @@
 import React from 'react';
 
 //Styled
-import { Container3, Left, Right, Card, Division3,CardSection } from './style'
+import { Container3, Left, Right, Card, Division3,CardSection,Button3 } from './style'
 
 const Section3 = () => {
 
     return (
-        <Container3 name="services">
+        <Container3 name="lancamento">
             <Left>
                 <span>Lançamento</span>
                 <Division3>
@@ -101,6 +101,9 @@ const Section3 = () => {
                     <g>
                     </g>
                 </svg>
+                <Button3>
+                    <a href="https://api.whatsapp.com/send?phone=554891320921&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20a%20acerca%20do%20lan%C3%A7amento" target="_blank" rel="noreferrer">Quero Saber mais sobre Lançamento</a>
+                </Button3>
             </Left>
             <Right>
                 <CardSection>

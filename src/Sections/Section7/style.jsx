@@ -5,6 +5,11 @@ import { Default } from '../../Pages/Home/style'
 export const Container7 = styled(Container)`
 background:#1b1b1b;
 padding-top:50px;
+
+@media(max-width:480px)
+{
+    padding: 60px 20px;
+}
 `
 
 export const Title = styled.span`
@@ -20,6 +25,11 @@ max-width: 540px;
 text-align: center;
 font-size: 16px;
 line-height: 1.5;
+
+@media(max-width:480px)
+{
+    max-width:260px;
+}
 `
 
 export const Division = styled.div`
@@ -50,12 +60,19 @@ display:flex;
 justify-content:center;
 align-items:center;
 margin-top:80px;
+
+@media(max-width:480px){
+    flex-direction:column;
+}
 `
 
 export const Card = styled(Default)`
 justify-content:center;
 margin-right:60px;
 
+@media(max-width:480px){
+    margin:0 0 40px 0;
+}
 `
 
 export const Image = styled(Default)`
@@ -85,8 +102,11 @@ i{
 `
 
 export const Description = styled.div`
-    margin-top:20px;
-    text-align:center;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     span:nth-child(1)
     {
@@ -96,9 +116,12 @@ export const Description = styled.div`
     letter-spacing: .8px;
     }
 
-    span:nth-child(3)
+    p
     {
         color: #d3d3d3;
         font-size:14px;
+        text-align:center;
+        margin-top:10px;
+        max-width:150px;
     }
 `
