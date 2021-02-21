@@ -24,8 +24,8 @@ const Section7 = () => {
                         <div style={{backgroundImage:`url(${Member1})`}}/>
                     </Image>
                     <Description>
-                        <span>Caio Portela</span><br />
-                        <span>Gestor de Tráfego e Lançamento</span>
+                        <span>Caio Portela</span>
+                        <p>Gestor de Tráfego e Lançamento</p>
                     </Description>
                 </Card>
                 <Card>
@@ -33,8 +33,8 @@ const Section7 = () => {
                         <div style={{backgroundImage:`url(${Member2})`}}/>
                     </Image>
                     <Description>
-                        <span>Mitchell Henrique</span><br />
-                        <span>Social Media e Copywriter</span>
+                        <span>Mitchell Henrique</span>
+                        <p>Social Media e Copywriter</p>
                     </Description>
                 </Card>
                 <Card style={{marginRight:'0px'}}>
@@ -42,8 +42,8 @@ const Section7 = () => {
                         <div style={{backgroundImage:`url(${Member3})`}}/>
                     </Image>
                     <Description>
-                        <span>Victor Marques</span><br />
-                        <span>Design e Desenvolvedor</span>
+                        <span>Victor Marques</span>
+                        <p>Design e Desenvolvedor</p>
                     </Description>
                 </Card>
             </Team>

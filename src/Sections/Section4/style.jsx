@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import { Container3,Left,Right,Card } from '../Section3/style'
-import { Division3,CardSection } from '../Section3/style'
+import { Division3,CardSection,Button3 } from '../Section3/style'
 import Section4 from '../../assets/background/Section4.webp'
 
 
@@ -16,6 +16,7 @@ padding:0;
 }
 `
 
+export const Button4 = styled(Button3)``
 export const Left2 = styled(Left)`
 order:1;
 margin-left:10px;

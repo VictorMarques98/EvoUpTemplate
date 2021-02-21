@@ -102,8 +102,11 @@ i{
 `
 
 export const Description = styled.div`
-    margin-top:20px;
-    text-align:center;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     span:nth-child(1)
     {
@@ -113,9 +116,12 @@ export const Description = styled.div`
     letter-spacing: .8px;
     }
 
-    span:nth-child(3)
+    p
     {
         color: #d3d3d3;
         font-size:14px;
+        text-align:center;
+        margin-top:10px;
+        max-width:150px;
     }
 `

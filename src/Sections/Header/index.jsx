@@ -29,27 +29,27 @@ const Header = ({ change }) => {
                     <div onClick={() => { changeSideMenu() }} >
                         <i className="fas fa-times"></i>
                     </div>
-                    <ul>
-                        <li>
-                            <Link to="inicio" spy={true} smooth={true} duration={800}>Início</Link>
+                    <ul >
+                        <li >
+                            <Link to="inicio" spy={true} smooth={true} duration={800} onClick={() => { changeSideMenu() }}>Início</Link>
                         </li>
-                        <li>
-                            <Link to="sobre" spy={true} smooth={true} duration={800}>Sobre</Link>
+                        <li >
+                            <Link to="sobre" spy={true} smooth={true} duration={800} onClick={() => { changeSideMenu() }}>Sobre</Link>
                         </li>
-                        <li>
-                            <Link to="servicos" spy={true} smooth={true} duration={800}>Serviços</Link>
+                        <li >
+                            <Link to="lancamento" spy={true} smooth={true} duration={800} onClick={() => { changeSideMenu() }}>Lançamento</Link>
                         </li>
-                        <li>
-                            <Link to="lancamento" spy={true} smooth={true} duration={800}>Lançamento</Link>
+                        <li >
+                            <Link to="servicos" spy={true} smooth={true} duration={800} onClick={() => { changeSideMenu() }}>Serviços</Link>
                         </li>
-                        <li>
-                            <Link to="portfolio" spy={true} smooth={true} duration={800}>Portfólio</Link>
+                        <li >
+                            <Link to="portfolio" spy={true} smooth={true} duration={800} onClick={() => { changeSideMenu() }}>Portfólio</Link>
                         </li>
-                        <li>
-                            <Link to="equipe" spy={true} smooth={true} duration={800}>Equipe</Link>
+                        <li >
+                            <Link to="equipe" spy={true} smooth={true} duration={800} onClick={() => { changeSideMenu() }}>Equipe</Link>
                         </li>
-                        <li>
-                            <Link to="contato" spy={true} smooth={true} duration={800}>Contato</Link>
+                        <li >
+                            <Link to="contato" spy={true} smooth={true} duration={800} onClick={() => { changeSideMenu() }}>Contato</Link>
                         </li>
                     </ul>
                 </NavMobile>
@@ -67,10 +67,10 @@ const Header = ({ change }) => {
                             <Link to="sobre" spy={true} smooth={true} duration={800}>Sobre</Link>
                         </li>
                         <li>
-                            <Link to="servicos" spy={true} smooth={true} duration={800}>Serviços</Link>
+                            <Link to="lancamento" spy={true} smooth={true} duration={800}>Lançamento</Link>
                         </li>
                         <li>
-                            <Link to="lancamento" spy={true} smooth={true} duration={800}>Lançamento</Link>
+                            <Link to="servicos" spy={true} smooth={true} duration={800}>Serviços</Link>
                         </li>
                         <li>
                             <Link to="portfolio" spy={true} smooth={true} duration={800}>Portfólio</Link>
@@ -94,9 +94,9 @@ const Header = ({ change }) => {
             </Logo>
             {isMobile()}
             <Zap>
-                <button class="cta">
-                    <i class="fab fa-whatsapp"></i>
-                    <a href="https://api.whatsapp.com/send?phone=554891320921&text=Ol%C3%A1%2C%20gostaria%20de%20alavancar%20meu%20neg%C3%B3cio" class="button-text">Fale Conosco</a>
+                <button className="cta">
+                    <i className="fab fa-whatsapp"></i>
+                    <a href="https://api.whatsapp.com/send?phone=554891320921&text=Ol%C3%A1%2C%20gostaria%20de%20alavancar%20meu%20neg%C3%B3cio" className="button-text" target="_blank" rel="noreferrer">Fale Conosco</a>
                 </button>
             </Zap>
         </Container>

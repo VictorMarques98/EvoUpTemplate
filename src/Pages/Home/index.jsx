@@ -11,7 +11,6 @@ const Section1 = lazy(() => import('../../Sections/Section1'))
 const Section2 = lazy(() => import('../../Sections/Section2'))
 const Section3 = lazy(() => import('../../Sections/Section3'))
 const Section4 = lazy(() => import('../../Sections/Section4'))
-const Section5 = lazy(() => import('../../Sections/Section5'))
 const Section6 = lazy(() => import('../../Sections/Section6'))
 const Section7 = lazy(() => import('../../Sections/Section7'))
 const Section8 = lazy(() => {
@@ -19,7 +18,6 @@ const Section8 = lazy(() => {
         return import("../../Sections/Section8")
     }
     else {
-
         return Promise.all([
             import("../../Sections/Section8"),
             new Promise(resolve => setTimeout(resolve, 2500))
@@ -73,7 +71,6 @@ const Home = () => {
                     <Section2 animation={animation} />
                     <Section3 />
                     <Section4 />
-                    <Section5 />
                     <Section6 />
                     <Section7 />
                     <Section8 />

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 //styled
-import { Container } from '../Section1/style'
+import { Container,Button } from '../Section1/style'
 import { Default } from '../../Pages/Home/style'
 import { Division } from '../Section7/style'
 import Section3 from '../../assets/background/Section3.webp'
@@ -38,18 +38,11 @@ height:100%;
 color: white;
 
 svg{
-    height:200px;
+    height:180px;
     margin-top:46px;
     fill: #dcdcdc;
-    animation: rocket-move 2s ease-in-out infinite alternate;
 }
 
-@media(min-width:480px)
-{
-@keyframes rocket-move{
-  to{ transform: translateY(30px); }
-}
-}
 
 
 span:nth-child(1)
@@ -133,4 +126,25 @@ span:nth-child(3)
 `
 
 export const Division3 = styled(Division)`
+`
+
+export const Button3 = styled(Button)`
+    width: 200px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px;
+    height: max-content;
+    color: white;
+    background: #1d8e15;
+    letter-spacing: .3px;
+    cursor:pointer!important;
+
+    &:hover{
+        background:#00aeff;
+    }
+
+    @media(max-width:480px)
+    {
+        width:100%;
+    }
 `

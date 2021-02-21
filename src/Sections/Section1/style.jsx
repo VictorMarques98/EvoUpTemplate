@@ -97,7 +97,7 @@ width:150px;
 height:44px;
 margin-top:25px;
 
-background-color:#e0c438;
+background-color:${(props) => props.color ? props.color : ''};
 border:none;
 border-radius:3px;
 outline:none;
@@ -133,7 +133,7 @@ a
 {
     background-color:white;
     a{
-        color:#e0c438;
+        color:  ${(props) => props.color ? props.color : ''};
         padding-right: 25px;
     }
 }

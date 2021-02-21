@@ -62,7 +62,7 @@ export const Global = createGlobalStyle`
 
 /* open-sans-300 - latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family:'Open Sans';
   font-style: normal;
   font-weight: 300;
   src: url('../../assets/fonts/open-sans-v18-latin-300.eot'); /* IE9 Compat Modes */
@@ -117,13 +117,27 @@ export const Global = createGlobalStyle`
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 800;
-  src: url('../../assets/fonts/open-sans-v18-latin-800.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/open-sans-v18-latin-800.eot'); /* IE9 Compat Modes */
   src: local(''),
-       url('../../assets/fonts/open-sans-v18-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../../assets/fonts/open-sans-v18-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../../assets/fonts/open-sans-v18-latin-800.woff') format('woff'), /* Modern Browsers */
-       url('../../assets/fonts/open-sans-v18-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../../assets/fonts/open-sans-v18-latin-800.svg#OpenSans') format('svg'); /* Legacy iOS */
+       url('../fonts/open-sans-v18-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v18-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v18-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v18-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v18-latin-800.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+/* montserrat-700italic - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v15-latin-700italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-v15-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v15-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v15-latin-700italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v15-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v15-latin-700italic.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 
 *{

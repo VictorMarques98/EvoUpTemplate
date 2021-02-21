@@ -156,6 +156,12 @@ export const Zap = styled.div`
   opacity: 1;
   transition: opacity 0.5s
 }
+
+@media(max-width:480px)
+{
+  right:10px;
+  bottom:10px;
+}
 `
 
 export const HbMenu = styled.div`

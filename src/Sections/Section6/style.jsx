@@ -99,6 +99,8 @@ background-image: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(0,0,0,.9) 100%
         font-size:15px;
     }
 
+@media(min-width:480px){
+
     &:hover{
         background-image: linear-gradient(to bottom,rgba(0,0,0,0),#ff5433 100%), url(${image1});
         margin-top:-20px;
@@ -124,6 +126,7 @@ background-image: linear-gradient(to bottom,rgba(0,0,0,0),#ff5433 100%), url(${i
         transform:translateY(0px);
         position:relative;
     }
+}
 }
 
 @media(max-width:480px){
