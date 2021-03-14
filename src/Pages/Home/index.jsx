@@ -12,7 +12,6 @@ const Section2 = lazy(() => import('../../Sections/Section2'))
 const Section3 = lazy(() => import('../../Sections/Section3'))
 const Section4 = lazy(() => import('../../Sections/Section4'))
 const Section6 = lazy(() => import('../../Sections/Section6'))
-const Section7 = lazy(() => import('../../Sections/Section7'))
 const Section8 = lazy(() => {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         return import("../../Sections/Section8")
@@ -72,7 +71,6 @@ const Home = () => {
                     <Section3 />
                     <Section4 />
                     <Section6 />
-                    <Section7 />
                     <Section8 />
                 </Default>
             </Suspense>

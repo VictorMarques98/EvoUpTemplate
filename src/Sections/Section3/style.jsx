@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 //styled
-import { Container,Button } from '../Section1/style'
+import { Container, Button } from '../Section1/style'
 import { Default } from '../../Pages/Home/style'
 import { Division } from '../Section7/style'
 import Section3 from '../../assets/background/Section3.webp'
@@ -129,7 +129,7 @@ export const Division3 = styled(Division)`
 `
 
 export const Button3 = styled(Button)`
-    width: 200px;
+    width: 250px;
     text-transform: uppercase;
     font-weight: 600;
     padding: 10px;
@@ -141,7 +141,21 @@ export const Button3 = styled(Button)`
 
     &:hover{
         background:#00aeff;
+        a{
+            padding-right: 0;
+        }
     }
+
+    a
+{
+
+    &:after{
+        content: "";
+        position: inline-block;
+        opacity: 0;
+    }
+}
+
 
     @media(max-width:480px)
     {

@@ -46,9 +46,7 @@ export const Button = styled.div`
   transition: .6s linear;
   border-radius: 40px;
   text-transform:uppercase;
-  font-weight:800;
   letter-spacing:1px;
-  font-family: Quicksand;
  
 }
 &:hover span{

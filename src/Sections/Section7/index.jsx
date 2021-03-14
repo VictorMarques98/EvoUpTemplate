@@ -10,7 +10,7 @@ const Section7 = () => {
 
     return (
         <Container7 name="equipe">
-            <Title>Idealizadores</Title>
+            <Title>dores</Title>
             <Division>
                 <div/>
                 <div/>
