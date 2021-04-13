@@ -46,9 +46,6 @@ const Header = ({ change }) => {
                             <Link to="portfolio" spy={true} smooth={true} duration={800} onClick={() => { changeSideMenu() }}>Portfólio</Link>
                         </li>
                         <li >
-                            <Link to="equipe" spy={true} smooth={true} duration={800} onClick={() => { changeSideMenu() }}>Equipe</Link>
-                        </li>
-                        <li >
                             <Link to="contato" spy={true} smooth={true} duration={800} onClick={() => { changeSideMenu() }}>Contato</Link>
                         </li>
                     </ul>
@@ -74,9 +71,6 @@ const Header = ({ change }) => {
                         </li>
                         <li>
                             <Link to="portfolio" spy={true} smooth={true} duration={800}>Portfólio</Link>
-                        </li>
-                        <li>
-                            <Link to="equipe" spy={true} smooth={true} duration={800}>Equipe</Link>
                         </li>
                         <li>
                             <Link to="contato" spy={true} smooth={true} duration={800}>Contato</Link>
